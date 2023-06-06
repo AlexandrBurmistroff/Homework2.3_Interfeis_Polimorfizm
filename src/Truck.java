@@ -1,4 +1,5 @@
 public class Truck {
+
     public String modelName;
     public int wheelsCount;
 
