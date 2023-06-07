@@ -1,3 +1,3 @@
 public interface Diagnostics {
-    public void check();
+    void check();
 }

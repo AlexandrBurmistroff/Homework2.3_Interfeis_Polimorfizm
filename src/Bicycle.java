@@ -5,10 +5,7 @@ public class Bicycle extends Vehicle implements Diagnostics {
     }
 
     public void check() {
-        System.out.println("Обслуживаем " + this.getModelName());
-        for (int i = 0; i < this.getWheelsCount(); i++) {
-            updateTyre();
-        }
+        updateTyre();
         System.out.println();
     }
 }
