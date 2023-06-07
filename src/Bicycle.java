@@ -1,8 +1,11 @@
-public class Bicycle {
-    public String modelName;
-    public int wheelsCount;
+public class Bicycle extends Vehicle implements Diagnostics {
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public Bicycle(String modelName, int wheelsCount) {
+        super(modelName, wheelsCount);
+    }
+
+    public void check() {
+        updateTyre();
+        System.out.println();
     }
 }
